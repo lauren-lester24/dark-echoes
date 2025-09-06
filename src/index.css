@@ -1,0 +1,104 @@
+/* --- GLOBAL RESETS --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #0f0f10; /* Dark background */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+  background: #0f0f10;
+  color: white;
+  padding: 2rem 1rem 0 1rem;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* --- MAIN LAYOUT --- */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 900px;
+  margin: 1rem auto;
+}
+
+/* --- EPISODE LIST --- */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.episode ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  
+}
+
+.episode li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #333;
+color: white; 
+ cursor: pointer;
+  
+}
+
+.episode li:hover,
+.episode li.selected {
+  background: #444;
+  color: white;
+}
+
+/* --- EPISODE DETAILS --- */
+.details {
+  background: #0f0f10;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.details h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+.details p {
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.details button {
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
